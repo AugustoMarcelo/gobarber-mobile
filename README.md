@@ -32,6 +32,9 @@
 
   # fazendo download das dependências
   yarn
+  
+  # proxy reverso
+  adb reverse tcp:3333 tcp:3333
 
   # inicializando a aplicação
   yarn run-android
