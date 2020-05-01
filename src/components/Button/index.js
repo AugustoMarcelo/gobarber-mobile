@@ -5,22 +5,22 @@ import PropTypes from 'prop-types';
 import { Container, Text } from './styles';
 
 export default function Button({ children, loading, ...rest }) {
-    return (
-        <Container {...rest}>
-            {loading ? (
-                <ActivityIndicator size="small" color="#fff" />
-            ) : (
-                <Text>{children}</Text>
-            )}
-        </Container>
-    );
+  return (
+    <Container {...rest}>
+      {loading ? (
+        <ActivityIndicator size="small" color="#fff" />
+      ) : (
+        <Text>{children}</Text>
+      )}
+    </Container>
+  );
 }
 
 Button.propTypes = {
-    children: PropTypes.string.isRequired,
-    loading: PropTypes.bool,
+  children: PropTypes.string.isRequired,
+  loading: PropTypes.bool,
 };
 
 Button.defaultProps = {
-    loading: false,
+  loading: false,
 };

@@ -20,7 +20,7 @@
 
 ## 💻 Instruções para execução
 
-> A aplicação teve o desenvolvimento focado em dispositivos ANDROID
+> A aplicação teve o desenvolvimento focado em dispositivos ANDROID. Atualizado com a versão 5 do react-navigation
 
 - Faça o download do projeto:
 ```bash
@@ -39,3 +39,5 @@
   # inicializando a aplicação
   npx react-native run-android
 ```
+
+> Caso seu dispositivo não consiga conectar-se ao back end, informe o ip da sua máquina no arquivo .env, na variável APP_URL

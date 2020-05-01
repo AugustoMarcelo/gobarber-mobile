@@ -3,6 +3,7 @@ module.exports = {
     es6: true,
   },
   extends: [
+    'plugin:react/recommended',
     'airbnb',
     'prettier',
     'prettier/react'
@@ -10,7 +11,7 @@ module.exports = {
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
-    __DEV__: true
+    __DEV__: true,
   },
   parserOptions: {
     ecmaFeatures: {
@@ -21,30 +22,23 @@ module.exports = {
   },
   plugins: [
     'react',
-    'jsx-a11y',
-    'import',
-    'react-hooks',
     'prettier'
   ],
   rules: {
-      "prettier/prettier": ["error", { "endOfLine": "auto" }],
-      "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
-      "import/prefer-default-export": "off",
-      "no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
-      "global-require": "off",
-      "react-native/no-raw-text": "off",
-      "no-param-reassign": "off",
-      "no-underscore-dangle": "off",
-      camelcase: "off",
-      "no-console": ["error", { allow: ["tron"]}],
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn"
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "react/jsx-filename-extension": ["warn", { extensions: [".jsx", ".js"] }],
+    "import/prefer-default-export": "off",
+    "react/require-default-props": "off",
+    "no-console": ["error", { allow: ["tron"] }],
+    "no-param-reassign": "off",
+    "react/jsx-props-no-spreading": "off",
+    "camelcase": "off"
   },
   settings: {
-      "import/resolver": {
-          "babel-plugin-root-import": {
-              rootPathSuffix: "src"
-          }
+    "import/resolver": {
+      "babel-plugin-root-import": {
+        rootPathSuffix: "src"
       }
+    }
   }
 };
