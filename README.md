@@ -40,4 +40,8 @@
   npx react-native run-android
 ```
 
-> Caso seu dispositivo não consiga conectar-se ao back end, informe o ip da sua máquina no arquivo .env, na variável APP_URL
+## 📸 Preview
+
+<h3 align="center">
+  <img src="https://user-images.githubusercontent.com/11545976/80828909-7c13b400-8bbc-11ea-8abb-a41b741c9df9.gif" height="500" />
+</h3>
